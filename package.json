@@ -1,12 +1,13 @@
 {
   "name": "vite-react-typescript-starter",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://marwanm7moud.github.io/fisrt_link",
   "scripts": {
     "predeploy": "npm run build",
-    "build": "vite build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "lint": "eslint .",
