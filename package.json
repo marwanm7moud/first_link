@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://marwanm7moud.github.io/project",
+  "homepage": "https://marwanm7moud.github.io/fisrt_link",
   "scripts": {
     "predeploy": "npm run build",
     "build": "vite build",
