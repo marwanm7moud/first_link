@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://marwanm7moud.github.io/fisrt_link",
+  "homepage": "https://marwanm7moud.github.io/fisrt_link/",
   "scripts": {
     "predeploy": "npm run build",
     "start": "react-scripts start",
