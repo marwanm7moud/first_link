@@ -14,11 +14,31 @@ import { IntlProvider, FormattedMessage } from "react-intl";
 import arMessages from "./translations/ar.json";
 import enMessages from "./translations/en.json";
 import logo from "./logo.png";
+import company1 from "./images/SNB logo.png";
+import company2 from "./images/Saico logo.png";
+import company3 from "./images/aman logo.png";
+import company4 from "./images/aqua logo.jpg";
+import company5 from "./images/b tech logo.jpg";
+import company6 from "./images/bank logo.png";
+import company7 from "./images/banl ahly logo.jpg";
+import company8 from "./images/buruj logo.png";
 
 const messages = {
   ar: arMessages,
   en: enMessages,
 };
+
+// Add this array after the locale state
+const COMPANIES = [
+  company1,
+  company2,
+  company3,
+  company4,
+  company5,
+  company6,
+  company7,
+  company8,
+];
 
 function App() {
   const [locale, setLocale] = useState("en");
@@ -61,7 +81,6 @@ function App() {
             </p>
           </div>
         </header>
-
         {/* About Section */}
         <section className="py-16 bg-brand-sand-light/10">
           <div className="container mx-auto px-6">
@@ -78,7 +97,6 @@ function App() {
             </div>
           </div>
         </section>
-
         {/* Why Choose Us */}
         <section className="py-16">
           <div className="container mx-auto px-6">
@@ -116,7 +134,6 @@ function App() {
             </div>
           </div>
         </section>
-
         {/* Core Objectives */}
         <section className="py-16 bg-brand-sand-light/10">
           <div className="container mx-auto px-6">
@@ -171,8 +188,33 @@ function App() {
             </div>
           </div>
         </section>
-
-        {/* Contact Section */}
+        {/* Trusted Companies */}
+        <section className="py-16 bg-brand-sand-light/5">
+          <div className="container mx-auto px-6">
+            <h2 className="text-3xl font-bold text-center mb-12 text-brand-brown">
+              <FormattedMessage id="trusted.title" />
+            </h2>
+            <div className="relative overflow-hidden">
+              <div
+                className="flex items-center gap-12 w-[200%] animate-marquee hover:animation-paused"
+                style={{
+                  animationDirection: locale === "ar" ? "reverse" : "normal",
+                  transform: locale === "ar" ? "translateX(50%)" : undefined,
+                }}
+              >
+                {[...COMPANIES, ...COMPANIES].map((logo, index) => (
+                  <img
+                    key={index}
+                    src={logo}
+                    className="h-16 opacity-80 grayscale hover:grayscale-0 hover:opacity-100 transition-all"
+                    alt="Trusted company"
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+        ;{/* Contact Section */}
         <section className="py-16">
           <div className="container mx-auto px-6">
             <h2 className="text-3xl font-bold text-center mb-12 text-brand-brown">
@@ -233,7 +275,6 @@ function App() {
             </div>
           </div>
         </section>
-
         {/* Footer */}
         <footer className="bg-brand-brown text-white py-8">
           <div className="container mx-auto px-6">

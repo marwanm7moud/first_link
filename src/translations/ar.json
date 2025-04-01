@@ -2,11 +2,11 @@
   "nav.title": "فرست لينك للتحصيل",
   "hero.title": "حلول إدارة الديون المتخصصة",
   "hero.subtitle": "خدمات مالية احترافية تركز على النتائج",
-  
+
   "about.title": "من نحن",
   "about.description1": "شركة فرست لينك للتحصيل هي منشأة بقيادة عقول وسواعد مصرية ذوي خبرة مصرفية ومالية متخصصة تعمل على تحصيل الديون نيابة عن الغير",
   "about.description2": "ولدينا سنوات من واقع العمل المصرفي والتطبيقي في مجال الاستشارات والتدريب وإدارة المخاطر الائتمانية ووضع الضوابط الرقابية وادارة الالتزام و تحصيل الديون",
-  
+
   "whyUs.title": "لماذا فرست لينك",
   "whyUs.reason1.title": "فريق متخصص",
   "whyUs.reason1.description": "فريق متخصص من محصلى الزيارات الميدانية والمحصلين الهاتفى",
@@ -14,7 +14,7 @@
   "whyUs.reason2.description": "وحدة مستقلة للبحث والتعقُّب",
   "whyUs.reason3.title": "ضمان الجودة",
   "whyUs.reason3.description": "التاكد من جودة تواصل المحصلين مع العملاء ومتابعة شكاوى العملاء",
-  
+
   "objectives.title": "أهدافنا",
   "objectives.1.title": "التحصيل الفعال",
   "objectives.1.description": "التحصيل بكفأة وفاعليه وبأسرع وقت",
@@ -24,10 +24,12 @@
   "objectives.3.description": "بناء شراكة قوية مع عملاءنا",
   "objectives.4.title": "أساليب مبتكرة",
   "objectives.4.description": "ابتكار افضل الاساليب لتحصيل الديون",
-  
+
+  "trusted.title": "موثوق به من قبل الشركات الرائدة",
+
   "contact.title": "اتصل بنا",
   "contact.phone": "الهاتف",
-  "contact.phone.number": "01091361306",
+  "contact.phone.number": "+201200849654",
   "contact.email": "البريد الإلكتروني",
   "contact.address": "العنوان",
   "contact.address.full": "21 عمارات العبور الدور 13 شقة 131 صلاح سالم",
@@ -36,6 +38,6 @@
   "contact.hours.weekend": "الجمعة - السبت",
   "contact.hours.timing": "9:00 صباحاً - 5:00 مساءً",
   "contact.hours.closed": "مغلق",
-  
+
   "footer.rights": "جميع الحقوق محفوظة"
 }
