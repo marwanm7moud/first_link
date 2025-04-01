@@ -206,7 +206,7 @@ function App() {
                   <img
                     key={index}
                     src={logo}
-                    className="h-16 opacity-80 grayscale hover:grayscale-0 hover:opacity-100 transition-all"
+                    className="h-16 transition-all"
                     alt="Trusted company"
                   />
                 ))}
