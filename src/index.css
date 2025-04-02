@@ -58,7 +58,28 @@
 }
 
 .animate-marquee {
-  animation: marquee 15s linear infinite;
+  animation: marquee 30s linear infinite;
+}
+
+@media (min-width: 768px) {
+  .animate-marquee {
+    animation-duration: 20s;
+  }
+}
+
+@media (min-width: 1024px) {
+  .animate-marquee {
+    animation-duration: 10s;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .hover\:animation-paused:hover {

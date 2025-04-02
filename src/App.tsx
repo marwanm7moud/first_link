@@ -210,7 +210,7 @@ function App() {
             </h2>
             <div className="relative overflow-hidden">
               <div
-                className="flex items-center gap-12 w-[200%] animate-marquee"
+                className="flex items-center gap-8 md:gap-12 w-[800%] md:w-[400%] lg:w-[200%] animate-marquee"
                 style={{
                   animationDirection: locale === "ar" ? "reverse" : "normal",
                 }}
@@ -219,7 +219,7 @@ function App() {
                   <img
                     key={index}
                     src={logo}
-                    className="h-16 transition-all"
+                    className="h-16 md:h-16 transition-all min-w-[100px] md:min-w-[120px]"
                     alt="Trusted company"
                   />
                 ))}
