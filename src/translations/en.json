@@ -34,8 +34,8 @@
   "contact.address": "Address",
   "contact.address.full": "21 El Obour Buildings, Floor 13, Apt 131, Salah Salem",
   "contact.hours": "Business Hours",
-  "contact.hours.weekdays": "Sunday - Thursday",
-  "contact.hours.weekend": "Friday - Saturday",
+  "contact.hours.weekdays": "Saturday - Thursday",
+  "contact.hours.weekend": "Friday Only",
   "contact.hours.timing": "9:00 AM - 5:00 PM",
   "contact.hours.closed": "Closed",
 

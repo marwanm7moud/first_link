@@ -9,6 +9,8 @@ import {
   Mail,
   MapPin,
   Clock,
+  Facebook,
+  Linkedin,
 } from "lucide-react";
 import { IntlProvider, FormattedMessage } from "react-intl";
 import arMessages from "./translations/ar.json";
@@ -196,7 +198,7 @@ function App() {
             </h2>
             <div className="relative overflow-hidden">
               <div
-                className="flex items-center gap-12 w-[200%] animate-marquee hover:animation-paused"
+                className="flex items-center gap-12 w-[200%] animate-marquee"
                 style={{
                   animationDirection: locale === "ar" ? "reverse" : "normal",
                   transform: locale === "ar" ? "translateX(50%)" : undefined,
@@ -247,7 +249,32 @@ function App() {
                 </p>
               </div>
             </div>
-            <div className="mt-12 bg-white p-6 rounded-lg shadow-md border border-brand-sand/20 max-w-4xl mx-auto">
+
+            {/* Social Media Links */}
+            <div className="mt-8 bg-white p-6 rounded-lg shadow-md border border-brand-sand/20 max-w-4xl mx-auto">
+              <div className="flex justify-center space-x-8">
+                <a
+                  href="https://www.linkedin.com/company/firstlinkdebetcollection/?viewAsMember=true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col items-center hover:text-brand-green transition-colors"
+                >
+                  <Linkedin className="h-8 w-8 text-brand-green mb-2" />
+                  <span className="text-brand-brown">LinkedIn</span>
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61574824862938"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col items-center hover:text-brand-green transition-colors"
+                >
+                  <Facebook className="h-8 w-8 text-brand-green mb-2" />
+                  <span className="text-brand-brown">Facebook</span>
+                </a>
+              </div>
+            </div>
+
+            <div className="mt-8 bg-white p-6 rounded-lg shadow-md border border-brand-sand/20 max-w-4xl mx-auto">
               <div className="flex items-center justify-center mb-6">
                 <Clock className="h-6 w-6 text-brand-green mr-2" />
                 <h3 className="text-xl font-semibold text-brand-brown">
@@ -289,11 +316,33 @@ function App() {
                   <FormattedMessage id="nav.title" />
                 </span>
               </div>
-              <div className="flex items-center">
-                <PhoneCall className="h-5 w-5 mr-2" />
-                <span>
-                  <FormattedMessage id="contact.title" />
-                </span>
+              <div className="flex items-center space-x-6">
+                <div className="flex items-center">
+                  <PhoneCall className="h-5 w-5 mr-2" />
+                  <span>
+                    <FormattedMessage id="contact.title" />
+                  </span>
+                </div>
+                <div className="flex space-x-4">
+                  <a
+                    href="https://www.linkedin.com/company/firstlinkdebetcollection/?viewAsMember=true"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-brand-green transition-colors"
+                    aria-label="LinkedIn"
+                  >
+                    <Linkedin className="h-5 w-5" />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61574824862938"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-brand-green transition-colors"
+                    aria-label="Facebook"
+                  >
+                    <Facebook className="h-5 w-5" />
+                  </a>
+                </div>
               </div>
             </div>
             <div className="mt-4 text-center text-brand-sand-light text-sm">

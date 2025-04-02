@@ -34,8 +34,8 @@
   "contact.address": "العنوان",
   "contact.address.full": "21 عمارات العبور الدور 13 شقة 131 صلاح سالم",
   "contact.hours": "ساعات العمل",
-  "contact.hours.weekdays": "الأحد - الخميس",
-  "contact.hours.weekend": "الجمعة - السبت",
+  "contact.hours.weekdays": "السبت - الخميس",
+  "contact.hours.weekend": "الجمعة فقط",
   "contact.hours.timing": "9:00 صباحاً - 5:00 مساءً",
   "contact.hours.closed": "مغلق",
 
