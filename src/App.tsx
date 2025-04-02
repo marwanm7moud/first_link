@@ -52,10 +52,15 @@ function App() {
   return (
     <IntlProvider messages={messages[locale]} locale={locale}>
       <div
-        className={`min-h-screen bg-white ${locale === "ar" ? "rtl" : "ltr"}`}
+        className={`min-h-screen bg-white`}
+        dir={locale === "ar" ? "rtl" : "ltr"}
       >
         {/* Hero Section */}
-        <header className="bg-gradient-to-r from-brand-brown to-brand-brown-light text-white">
+        <header
+          className={`text-white ${
+            locale === "ar" ? "bg-[#5e2e1a]" : "bg-[#5e2e1a]"
+          }`}
+        >
           <nav className="container mx-auto px-6 py-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center">
@@ -64,11 +69,14 @@ function App() {
                   alt="First Link Dept Collection"
                   className="h-12 w-auto"
                 />
-                <span className="ml-2 text-xl font-bold text-brand-sand">
+                <span className="ms-2 text-xl font-bold text-brand-sand">
                   <FormattedMessage id="nav.title" />
                 </span>
               </div>
-              <button onClick={toggleLanguage} className="btn-secondary">
+              <button
+                onClick={toggleLanguage}
+                className="px-4 py-2 bg-white text-[#7a3b1f] rounded-lg font-medium"
+              >
                 {locale === "en" ? "العربية" : "English"}
               </button>
             </div>
@@ -144,7 +152,11 @@ function App() {
             </h2>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <div className="flex items-start">
-                <Target className="h-6 w-6 text-brand-green mt-1 mr-4 flex-shrink-0" />
+                <Target
+                  className={`h-6 w-6 text-brand-green mt-1 flex-shrink-0 ${
+                    locale === "ar" ? "ml-4" : "mr-4"
+                  }`}
+                />
                 <div>
                   <h3 className="text-xl font-semibold mb-2 text-brand-brown">
                     <FormattedMessage id="objectives.1.title" />
@@ -201,7 +213,6 @@ function App() {
                 className="flex items-center gap-12 w-[200%] animate-marquee"
                 style={{
                   animationDirection: locale === "ar" ? "reverse" : "normal",
-                  transform: locale === "ar" ? "translateX(50%)" : undefined,
                 }}
               >
                 {[...COMPANIES, ...COMPANIES].map((logo, index) => (
@@ -252,7 +263,11 @@ function App() {
 
             {/* Social Media Links */}
             <div className="mt-8 bg-white p-6 rounded-lg shadow-md border border-brand-sand/20 max-w-4xl mx-auto">
-              <div className="flex justify-center space-x-8">
+              <div
+                className={`flex justify-center ${
+                  locale === "ar" ? "space-x-reverse" : ""
+                } space-x-8`}
+              >
                 <a
                   href="https://www.linkedin.com/company/firstlinkdebetcollection/?viewAsMember=true"
                   target="_blank"
@@ -316,14 +331,22 @@ function App() {
                   <FormattedMessage id="nav.title" />
                 </span>
               </div>
-              <div className="flex items-center space-x-6">
+              <div
+                className={`flex justify-center ${
+                  locale === "ar" ? "space-x-reverse" : ""
+                } space-x-6`}
+              >
                 <div className="flex items-center">
                   <PhoneCall className="h-5 w-5 mr-2" />
                   <span>
                     <FormattedMessage id="contact.title" />
                   </span>
                 </div>
-                <div className="flex space-x-4">
+                <div
+                  className={`flex justify-center ${
+                    locale === "ar" ? "space-x-reverse" : ""
+                  } space-x-4`}
+                >
                   <a
                     href="https://www.linkedin.com/company/firstlinkdebetcollection/?viewAsMember=true"
                     target="_blank"
