@@ -48,6 +48,11 @@
   );
 }
 
+/* Always scroll left-to-right */
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
 @keyframes marquee {
   0% {
     transform: translateX(0);
@@ -57,10 +62,7 @@
   }
 }
 
-.animate-marquee {
-  animation: marquee 30s linear infinite;
-}
-
+/* Responsive timing */
 @media (min-width: 768px) {
   .animate-marquee {
     animation-duration: 20s;
@@ -70,15 +72,6 @@
 @media (min-width: 1024px) {
   .animate-marquee {
     animation-duration: 10s;
-  }
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
   }
 }
 
